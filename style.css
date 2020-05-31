@@ -5,3 +5,10 @@ html {
 *:before,
 *:after {
   box-sizing: inherit; }
+
+.avatar {
+  display: flex;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
