@@ -6,9 +6,48 @@ html {
 *:after {
   box-sizing: inherit; }
 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  display: flex;
+  width: 824px;
+  max-height: 780px;
+  padding: 32px;
+  border: solid 2px black;
+  border-radius: 8px; }
+
 .avatar {
   display: flex;
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; }
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 32px; }
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .person__name {
+    margin: 0; }
+  .person__position {
+    margin: 0; }
+
+.description__title, .learning__heading, .socialmedia__heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0; }
+
+.learning__paragraf, .description__myself {
+  margin-top: 4px; }
+
+.learning__paragraf {
+  margin: 4px 0; }
+
+.learning__list {
+  margin: 0; }

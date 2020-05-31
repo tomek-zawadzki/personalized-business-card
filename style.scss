@@ -7,10 +7,63 @@ html {
     box-sizing: inherit;
   }
 
+  @mixin fontStyles {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    width: 824px;
+    max-height: 780px;
+    padding: 32px;
+    border: solid 2px black;
+    border-radius: 8px;
+  }
+
   .avatar {
     display: flex;
     flex-shrink: 0;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    margin-right: 32px;
+  }
+
+  .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__name  {
+      margin: 0;
+    }
+    &__position {
+      margin: 0;
+    }
+  }
+
+  .description__title, .learning__heading, .socialmedia__heading {
+    @include fontStyles()
+  }
+  
+  .learning__paragraf, .description__myself {
+    margin-top: 4px;
+  }
+
+  .learning {
+    &__paragraf {
+      margin: 4px 0;
+    }
+    &__list {
+      margin: 0;
+    }
   }
