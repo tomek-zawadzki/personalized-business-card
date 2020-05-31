@@ -14,7 +14,11 @@ html {
     padding: 0;
     color: #b0946c;
   }
-
+  .body--js {
+    background-color: #fff;
+    color: #fff;
+    }
+  
   .body {
     height: 100vh;
     background-color: #18191a;
@@ -33,7 +37,11 @@ html {
   }
 
   .card {
-    display: flex;
+    display: grid;
+    grid-template-areas: "header header header"
+    "aside . article";
+    grid-template-columns: 150px 8px 1fr;
+    column-gap: 8px;
     background-color: #242526;
     width: 824px;
     max-height: 780px;
@@ -45,14 +53,17 @@ html {
 
   .avatar {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-right: 32px;
   }
 
   .person {
+    grid-column-start: 2;
+    grid-column-end: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +75,31 @@ html {
     &__position {
       margin: 0;
     }
+  }
+
+  .aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
   }
 
   .me {
@@ -92,14 +128,18 @@ html {
   }
 
   .logo {
+    box-sizing: content-box;
     width: 35px;
     height: 35px;
     margin-right: 10px;
-    color: #45bd62;
+    padding: 6px;
   }
 
-  .body--js {
-  background-color: #fff;
-  color: #fff;
+  .logo:hover {
+    transform: scale(1.2);
+    background-color:#b0946c;
+    border: solid 1px #b0946c;
+    border-radius: 4px;
   }
 
+ 

@@ -7,24 +7,43 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="body body--js">
-    <label class="label">
-      <input class="checkbox checkbox--js" type="checkbox" id="checkbox" required />
-    </label>
-    <main class="card card--js">
+   
+    <main class="card">
+        <header class="person">
+            <h1 class="person__name">Tomasz Zawadzki</h1>
+            <p class="person__position">
+              uczeń frontendu
+            </p>
+          </header>
+        <aside class="aside">
       <img
         class="avatar"
         src="programista.png"
         alt="zdjęcie"
         title="tu będzie moje zdjęcie"
       />
-      <div class="content">
-        <header class="person">
-          <h1 class="person__name">Tomasz Zawadzki</h1>
-          <p class="person__position">
-            uczeń frontendu
-          </p>
-        </header>
-
+      <div class="socialmedia">
+        
+        <a
+          class="scialmedia__github"
+          href="https://github.com/tomek-zawadzki"
+          ><img class="logo" src="github-logo.png" alt="logo github"
+        /></a>
+        <a
+          class="scialmedia__instagram"
+          href="https://www.instagram.com/zawa1990/?hl=pl"
+          ><img class="logo" src="instagram-logo.png" alt="logo instagram"
+        /></a>
+        <a
+          class="scialmedia__facebook"
+          href="https://www.facebook.com/tomek.zawadzki.77"
+          ><img class="logo" src="facebook-logo.png" alt="logo facebook"
+        /></a>
+      </div>
+    </aside>
+      
+        
+        <div class="content">
         <article class="me">
           <h2 class="me__heading">O mnie:</h2>
           <section class="description">
@@ -55,24 +74,7 @@
               Dalsze kroki po szkoleniu to frameworki JS, w przyszłości backend.
             </p>
           </section>
-          <section class="socialmedia">
-            <h3 class="socialmedia__heading">Gdzie mnie znajdziesz:</h3>
-            <a
-              class="scialmedia__github"
-              href="https://github.com/tomek-zawadzki"
-              ><img class="logo" src="github-logo.png" alt="logo github"
-            /></a>
-            <a
-              class="scialmedia__instagram"
-              href="https://www.instagram.com/zawa1990/?hl=pl"
-              ><img class="logo" src="instagram-logo.png" alt="logo instagram"
-            /></a>
-            <a
-              class="scialmedia__facebook"
-              href="https://www.facebook.com/tomek.zawadzki.77"
-              ><img class="logo" src="facebook-logo.png" alt="logo facebook"
-            /></a>
-          </section>
+          
         </article>
       </div>
     </main>
