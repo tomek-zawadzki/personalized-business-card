@@ -5,5 +5,7 @@ darkStyle.addEventListener('change', () => {
     document.body.classList.toggle('body--js')
 })
 
-
+console.log(darkStyle)
   
+
+let isDark = false
