@@ -173,7 +173,7 @@ html {
 .card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 300px;
   padding: 8px;
   position: relative;
 }
@@ -208,6 +208,141 @@ html {
 .socialmedia__heading {
   @include fontStyles();
   font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 568px) {
+  body {
+  font-size: xx-small;
+.person {
+  margin-right: 35px;
+}
+
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  padding: 8px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.aside {  
+  &__avatar {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  &__socialmedia {
+    display: inline-block;
+    margin: 0px;
+  }
+}
+.logo {
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  padding: 6px;
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--text-color);
+    border: solid 1px var(--text-color);
+    border-radius: 4px;
+  }
+}
+.description__title,
+.learning__heading,
+.socialmedia__heading {
+  @include fontStyles();
+  font-size: 12px;
+}
+
+.button {
+  position: absolute;
+  top: 8px;
+  padding: 5px 15px;
+  color: var(--button-color);
+  background-color: var(--button-background);
+  border: none;
+  font-size: 12px;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+  font-size: xx-small;
+.person {
+  margin-right: 35px;
+}
+
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+ 
+  padding: 8px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.aside {  
+  &__avatar {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  &__socialmedia {
+    display: inline-block;
+    margin: 0px;
+  }
+}
+.logo {
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  padding: 6px;
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--text-color);
+    border: solid 1px var(--text-color);
+    border-radius: 4px;
+  }
+}
+.description__title,
+.learning__heading,
+.socialmedia__heading {
+  @include fontStyles();
+  font-size: 12px;
+}
+
+.button {
+  position: absolute;
+  top: 8px;
+  padding: 5px 15px;
+  color: var(--button-color);
+  background-color: var(--button-background);
+  border: none;
+  font-size: 12px;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 }
