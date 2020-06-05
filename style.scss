@@ -10,7 +10,7 @@ html {
 :root {
   --background-color: #18191a;
   --text-color: #b0946c;
-  --main-background: #242526;
+  --main-background: #323336;
   --button-color: #001a23;
   --button-background: #d6d1cd;
 }
@@ -67,15 +67,7 @@ html {
   border-radius: 8px;
 }
 
-.aside__avatar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
+
 
 .person {
   grid-column-start: 2;
@@ -109,6 +101,16 @@ html {
     align-items: center;
     margin-bottom: 60px;
   }
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
 }
 .content {
   grid-column-start: 3;
@@ -157,4 +159,55 @@ html {
     border: solid 1px var(--text-color);
     border-radius: 4px;
   }
+}
+
+
+@media screen and (max-width: 376px) {
+  body {
+  font-size: xx-small;
+.person {
+  margin-right: 35px;
+}
+
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 8px;
+  position: relative;
+}
+
+.aside {  
+  &__avatar {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+  }
+  &__socialmedia {
+    display: inline-block;
+    margin: 0px;
+  }
+}
+.logo {
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  padding: 6px;
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--text-color);
+    border: solid 1px var(--text-color);
+    border-radius: 4px;
+  }
+}
+.description__title,
+.learning__heading,
+.socialmedia__heading {
+  @include fontStyles();
+  font-size: 12px;
+}
+
 }
