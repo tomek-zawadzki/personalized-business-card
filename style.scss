@@ -11,6 +11,8 @@ html {
     --background-color: #18191a;
     --text-color: #b0946c;
     --main-background: #242526;
+    --button-color: #001a23;
+    --button-background: #D6D1CD;
   }
 
   @mixin fontStyles {
@@ -39,6 +41,17 @@ html {
   .button {
     position: absolute;
     top: 30px;
+    padding: 5px 15px;
+    color: var(--button-color);
+    background-color: var(--button-background);
+    border: none;
+    font-size: 25px;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
 
   }
 
